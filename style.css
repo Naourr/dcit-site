@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+
+
+section {
+    box-shadow: 2px 2px 20px;
+    border-radius: 6px;
+}
+
+#slambook {
+    padding: 50px;
+    background-color: antiquewhite;
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1, p {
+    color: black;
+}
+
+.profile-pic {
+    height: 200px;
+    border-radius: 50%;
+    transition: scale 0.3s ease-out;
+
+    /* border: 5px solid black;
+    float: right;
+    margin-left: 30px; */
+}
+.profile-pic:hover {
+    scale: 1.05;
+    transition: scale 0.3s ease-out;
+}
+.socials {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 4px;
+}
+.socials img {
+    height: 25px;
+    transition: scale 0.3s ease-out;
+}
+.socials img:hover {
+    scale: 1.05;
+    transition: scale 0.3s ease-out;
+}
+.icon-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+table {
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+}
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+
+#scrapbook {
+    background-color: antiquewhite;
+    aspect-ratio: 2/3;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    margin: 3rem;
+    
+}
+
+#scrapbook img {
+    position: absolute;
+}
+
+.torn-paper-top {
+    height: 50%;
+}
+.torn-frame {
+    height: 100%;
+    transform: rotateY(180deg);
+    bottom: 0;
+    right: 0;
+}
+
+.violet-smile {
+    height: 26%;
+    right: 21%;
+    top: -1%;
+}
+.violet-hand {
+    height: 30%;
+    right: 4%;
+    top: 9%;
+}
+.letters {
+    height: 50%;
+    right: -25%;
+    top: 25%;
+    transform: rotateY(180deg) rotateZ(30deg);
+}
+.violet-payong {
+    height: 40%;
+    bottom: 30%;
+    right: 0%;
+}
+
+.violet-sat {
+    height: 38%;
+    bottom: 0;
+}
+.letters1 {
+    height: 12%;
+    bottom: 14%;
+    left: 23%;
+}
+
+.typewriter {
+    height: 23%;
+    bottom: 0%;
+    right: 27%;
+}
+.brooch {
+    height: 20%;
+    bottom: 11%;
+    right: 5%;
+}
+.quote {
+    height: 45%;
+    top: 42%;
+    left: 4%;
+}
+.violet-depressed {
+    height: 55%;
+    left: -12%;
+    top: -4%;
+}
+.violet-egg {
+    height: 25%;
+    left: 23%;
+    top: 10%;
+}
+.pin {
+    height: 13%;
+    top: 2%;
+    right: 2%;
+}
+
+
+.vid {
+    position: absolute;
+    height: 18%;
+    width: 43.6%;
+
+    top: 32.6%;
+    left: 12%;
+    background-color: black;
+}
+.polaroid {
+    height: 30%;
+    top: 27%;
+    left: 6%;
+    pointer-events: none;
+}
+.flowers {
+    height: 30%;
+    top: 26%;
+    left: -12%;
+    pointer-events: none;
+}

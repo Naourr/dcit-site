@@ -59,17 +59,28 @@ body:has(#bg4:checked) {
     flex-direction: column;
     align-self: start;
     scrollbar-width: thin;
-    scrollbar-color: antiquewhite rgb(36, 36, 36);
+    scrollbar-color: rgb(36, 36, 36) antiquewhite;
     overflow-x: hidden;
+    flex-grow: 1;
+}
+.container > * {
+    scroll-snap-align: start;
+    position: relative;
+    align-self: center;
 }
 section {
-    scroll-snap-align: start;
+    margin: 2rem;
     box-shadow: 2px 2px 20px;
     border-radius: 6px;
     background-color: rgba(250, 235, 215, 0.873);
-    position: relative;
-    align-self: center;
-    margin: 2rem;
+}
+footer {
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 #slambook {
@@ -84,7 +95,7 @@ section {
     overflow: hidden;
 }
 
-.table-div {
+.table-holder {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -7,16 +7,47 @@ body {
     background-position: center;
     background-size: cover;
 }
-body:has(.violet-sat:hover) {
-    background-image: url(assets/images/bg/bg6.jpg);
+
+.bg-picker {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
-body:has(.violet-payong:hover) {
-    background-image: url(assets/images/bg/bg3.jpg);
+input[type="radio"] {
+    appearance: none;
 }
-body:has(.violet-depressed:hover) {
-    background-image: url(assets/images/bg/bg1.jpg);
+input[type="radio"]:checked + label {
+    border-radius: 50%;
+    background-color: rgb(25, 189, 134);
+}
+label {
+    content: "";
+    display: block;
+    height: 16px;
+    aspect-ratio: 1/1;
+    border: 4px solid antiquewhite;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    cursor: pointer;
+    box-shadow: 0 0 10px;
 }
 
+body:has(#bg1:checked) {
+    background-image: url('assets/images/bg/bg1.gif');
+}
+body:has(#bg2:checked) {
+    background-image: url('assets/images/bg/bg2.jpg');
+}
+body:has(#bg3:checked) {
+    background-image: url('assets/images/bg/bg3.jpg');
+}
+body:has(#bg4:checked) {
+    background-image: url('assets/images/bg/bg4.jpg');
+}
 
 .container {
     height: 100vh;
@@ -28,7 +59,8 @@ body:has(.violet-depressed:hover) {
     flex-direction: column;
     align-self: start;
     scrollbar-width: thin;
-    scrollbar-color: antiquewhite rgb(36, 36, 36) ;
+    scrollbar-color: antiquewhite rgb(36, 36, 36);
+    overflow-x: hidden;
 }
 section {
     scroll-snap-align: start;
@@ -51,7 +83,6 @@ section {
     aspect-ratio: 2/3;
     overflow: hidden;
 }
-
 
 .table-div {
     display: flex;
@@ -92,7 +123,6 @@ section {
     gap: 8px;
 }
 
-
 table {
     width: 100%;
     border: 2px solid black;
@@ -102,9 +132,6 @@ td {
     border: 2px solid black;
     padding: 5px;
 }
-
-
-
 
 #scrapbook img {
     position: absolute;
@@ -185,11 +212,10 @@ td {
     right: 2%;
 }
 
-
 .vid {
     position: absolute;
     height: 18%;
-    width: 43.6%;
+    width: 44.2%;
 
     top: 32.6%;
     left: 12%;
@@ -207,8 +233,6 @@ td {
     left: -12%;
     pointer-events: none;
 }
-
-
 
 @media screen and (max-width: 460px) {
     body {

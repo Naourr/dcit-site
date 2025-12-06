@@ -1,3 +1,37 @@
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/images/bg/wallpaper-repeatable.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.intro * {
+    position: absolute;
+}
+.intro:has(input[type="radio"]:checked) {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+.intro label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro img {
+    width: 200px;
+    height: auto;
+}
+.intro p {
+    top: 60%;
+}
+
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -6,6 +40,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    cursor: url(assets/images/cursor/cursor.png), auto;
+}
+video,
+a,
+label {
+    cursor: url('assets/images/cursor/pointer.png'), pointer;
 }
 
 .bg-picker {
@@ -20,11 +60,11 @@ body {
 input[type="radio"] {
     appearance: none;
 }
-input[type="radio"]:checked + label {
+.bg-picker input[type="radio"]:checked + label {
     border-radius: 50%;
     background-color: rgb(25, 189, 134);
 }
-label {
+.bg-picker label {
     content: "";
     display: block;
     height: 16px;
@@ -36,9 +76,6 @@ label {
     box-shadow: 0 0 10px;
 }
 
-body:has(#bg1:checked) {
-    background-image: url('assets/images/bg/bg1.gif');
-}
 body:has(#bg2:checked) {
     background-image: url('assets/images/bg/bg2.jpg');
 }
@@ -72,12 +109,12 @@ section {
     margin: 2rem;
     box-shadow: 2px 2px 20px;
     border-radius: 6px;
-    background-color: rgba(250, 235, 215, 0.873);
+    background-color: rgba(250, 235, 215, 0.9);
 }
 footer {
     width: 100%;
     background-color: antiquewhite;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 1.5rem 2rem;
     text-align: center;
     font-size: 0.9rem;
@@ -113,6 +150,7 @@ footer {
 }
 
 .socials {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: left;
     align-items: center;

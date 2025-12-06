@@ -14,7 +14,7 @@
             <header class="profile">
                 <img class="profile-pic" src="assets/images/violet.jpg" alt="pfp">
                 <h1>Princess Marielle P. Depalubos</h1>
-                <p>Greetings. My name is Princess, I am 18 years old, and Im currently studying Computer Science at Cavite State University - Don Severino de las Alas Campus.</p>
+                <p>Greetings. My name is Princess but my friends call me Depa, I am 18 years old, and Im currently studying Computer Science at Cavite State University - Don Severino de las Alas Campus.</p>
                 <div class="socials">
                     <div class="icon-holder">
                         <a href="https://www.facebook.com/princessmarielle.palmerodepalubos/" target="_blank">
@@ -54,16 +54,22 @@
                             <td>Fried chicken and Fried eggs</td>
                         </tr>
                         <tr>
-                            <td>Hobbies and how you got into it:</td>
-                            <td>Journaling, Guitar, Coding.</td>
+                            <td>Hobbies:</td>
+                            <td>
+                                <ul>
+                                    <li>Journaling</li>
+                                    <li>Guitar</li>
+                                    <li>Coding</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td>Biggest fear:</td>
-                            <td>Getting hit by a truck.</td>
+                            <td>Get hit by a truck</td>
                         </tr>
                         <tr>
                             <td>Current problem/s:</td>
-                            <td>Phone addiction, staying and waking up late, lack of free time.</td>
+                            <td>Phone addiction, waking up late, lack of free time.</td>
                         </tr>
                         <tr>
                             <td>Biggest Accomplishments:</td>
@@ -85,10 +91,10 @@
                 <h1>Random Questions</h1>
                 <dl>
                     <dt>❖ If you could have any superpower, what would it be?</dt>
-                    <dd>Time reversal. So I can undo every embarrasing mistake I make.</dd>
+                    <dd>Time reversal. So I can undo embarrasing mistakes I make.</dd>
                     <br>
                     <dt>❖ What was your dream job as a kid?</dt>
-                    <dd>To be a Doctor, because my parents told me that should be my dream job.</dd>
+                    <dd>Becoming a Doctor, i dont remember why..</dd>
                     <br>
                     <dt>❖ What's your favorite thing about the place where you live?</dt>
                     <dd>The exhaust fan in my room.</dd>
@@ -130,7 +136,7 @@
             <img class="violet-egg" src="assets/images/scrapbook_elements/violet-egg.png">
             <img class="pin" src="assets/images/scrapbook_elements/pin.png">
 
-            <video controls class="vid" loop>
+            <video controls class="vid" playsinline autoplay muted loop>
                 <source src="assets/videos/violet.mp4" type="video/mp4">
             </video>
 
@@ -146,15 +152,20 @@
     </main>
 
     <div class="bg-picker">
-        <input type="radio" name="bg" id="bg1" checked>
-        <label for="bg1"></label>
         <input type="radio" name="bg" id="bg2">
         <label for="bg2"></label>
-        <input type="radio" name="bg" id="bg3">
+        <input type="radio" name="bg" id="bg3" checked>
         <label for="bg3"></label>
         <input type="radio" name="bg" id="bg4">
         <label for="bg4"></label>
     </div>
 
+    <form autocomplete="off" class="intro">
+        <input type="radio" name="letter-icon" id="letter-icon">
+        <label for="letter-icon">
+            <img src="assets/images/letter-icon.png">
+        </label>
+        <p>You received a letter.</p>
+    </form>
 </body>
 </html>
